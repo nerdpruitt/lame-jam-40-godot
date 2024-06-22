@@ -1,14 +1,14 @@
 [gd_scene load_steps=4 format=3 uid="uid://bjsccwevtpnng"]
 
 [ext_resource type="Texture2D" uid="uid://b3wg7cn33qlc1" path="res://assets/sprites/shotgun-bullet.svg" id="1_0h6s2"]
-[ext_resource type="Script" path="res://scenes/bullet.gd" id="1_tahbj"]
+[ext_resource type="Script" path="res://scripts/Bullet.gd" id="1_cvb35"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_6fduu"]
 radius = 16.0
 
 [node name="Bullet" type="Area2D"]
 collision_layer = 8
-script = ExtResource("1_tahbj")
+script = ExtResource("1_cvb35")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("1_0h6s2")
