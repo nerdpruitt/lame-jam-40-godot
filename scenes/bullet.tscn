@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://bjsccwevtpnng"]
+
+[ext_resource type="Texture2D" uid="uid://b3wg7cn33qlc1" path="res://assets/sprites/shotgun-bullet.svg" id="1_0h6s2"]
+[ext_resource type="Script" path="res://scenes/bullet.gd" id="1_tahbj"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_6fduu"]
+radius = 16.0
+
+[node name="Bullet" type="Area2D"]
+collision_layer = 8
+script = ExtResource("1_tahbj")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_0h6s2")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_6fduu")
+
+[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="."]
+
+[connection signal="screen_exited" from="VisibleOnScreenNotifier2D" to="." method="_on_visible_on_screen_notifier_2d_screen_exited"]

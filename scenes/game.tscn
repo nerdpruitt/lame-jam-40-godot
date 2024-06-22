@@ -1,7 +1,18 @@
-[gd_scene load_steps=2 format=3 uid="uid://csockvd3r10ml"]
+[gd_scene load_steps=5 format=3 uid="uid://csockvd3r10ml"]
 
+[ext_resource type="PackedScene" uid="uid://281cw6vhd6t" path="res://scenes/background.tscn" id="1_jmatr"]
 [ext_resource type="PackedScene" uid="uid://c6535udp5a0xt" path="res://scenes/player.tscn" id="1_rhuha"]
+[ext_resource type="Script" path="res://scripts/BulletManager.gd" id="3_g2m60"]
+[ext_resource type="PackedScene" uid="uid://bjsccwevtpnng" path="res://scenes/bullet.tscn" id="4_xqu5i"]
 
 [node name="Game" type="Node2D"]
 
+[node name="Background" parent="." instance=ExtResource("1_jmatr")]
+
 [node name="Player" parent="." instance=ExtResource("1_rhuha")]
+
+[node name="BulletManager" type="Node2D" parent="."]
+script = ExtResource("3_g2m60")
+bullet_scene = ExtResource("4_xqu5i")
+
+[connection signal="shoot" from="Player" to="BulletManager" method="_on_player_shoot"]
