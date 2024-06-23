@@ -1,7 +1,7 @@
 extends Area2D
 
 func _physics_process(_delta):
-	var mouse_position = get_viewport().get_mouse_position()
+	var mouse_position = get_global_mouse_position()
 	look_at(mouse_position)
 
 func shoot():
