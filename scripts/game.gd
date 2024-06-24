@@ -1,6 +1,5 @@
 extends Node2D
 
-
 func spawn_mob():
 	var new_mob = preload("res://scenes/flying_saucer.tscn").instantiate()
 	%PathFollow2D.progress_ratio = randf()
