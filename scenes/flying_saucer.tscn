@@ -4,12 +4,11 @@
 [ext_resource type="Script" path="res://scripts/flying_saucer.gd" id="1_ertuh"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_vivwt"]
-radius = 67.1349
-height = 152.665
+radius = 39.1667
+height = 98.6301
 
 [node name="FlyingSaucer" type="CharacterBody2D"]
 collision_layer = 2
-collision_mask = 3
 motion_mode = 1
 script = ExtResource("1_ertuh")
 
@@ -18,7 +17,8 @@ position = Vector2(131, 81)
 texture = ExtResource("1_2apfu")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(131, 88)
+position = Vector2(133, 88)
 rotation = 1.5708
-scale = Vector2(0.789455, 1.44106)
+scale = Vector2(1.2, 2.19)
 shape = SubResource("CapsuleShape2D_vivwt")
+debug_color = Color(0, 0.6, 0.701961, 0.419608)
