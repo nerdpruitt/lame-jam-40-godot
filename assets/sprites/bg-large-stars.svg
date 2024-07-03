@@ -6,7 +6,7 @@
             <rect x="-383.112" y="1412" width="2000" height="1500" style="fill:none;"/>
             <g id="Large-Stars" serif:id="Large Stars" transform="matrix(0.159207,-0.0713316,0.040124,0.159207,1289.55,2677.71)">
                 <g transform="matrix(3.0822,1.38096,-1.03572,4.10959,-10769,-17079.2)">
-                    <circle cx="1471" cy="1574" r="15" style="fill:rgb(71,45,125);"/>
+                    <circle cx="1471" cy="1574" r="15" style="fill:rgb(46,29,81);"/>
                 </g>
                 <g transform="matrix(3.0822,1.38096,-1.03572,4.10959,-7019.56,-17113.4)">
                     <circle cx="1471" cy="1574" r="15" style="fill:rgb(71,45,125);"/>
@@ -18,7 +18,7 @@
                     <circle cx="1471" cy="1574" r="15" style="fill:rgb(71,45,125);"/>
                 </g>
                 <g transform="matrix(3.0822,1.38096,-1.03572,4.10959,-10281.1,-15245.3)">
-                    <circle cx="1471" cy="1574" r="15" style="fill:rgb(71,45,125);"/>
+                    <circle cx="1471" cy="1574" r="15" style="fill:rgb(46,29,81);"/>
                 </g>
                 <g transform="matrix(3.0822,1.38096,-1.03572,4.10959,-9905.01,-19069.6)">
                     <circle cx="1471" cy="1574" r="15" style="fill:rgb(71,45,125);"/>
@@ -27,16 +27,16 @@
                     <circle cx="1471" cy="1574" r="15" style="fill:rgb(71,45,125);"/>
                 </g>
                 <g transform="matrix(3.0822,1.38096,-1.03572,4.10959,-8606.65,-17021.3)">
-                    <circle cx="1471" cy="1574" r="15" style="fill:rgb(71,45,125);"/>
+                    <circle cx="1471" cy="1574" r="15" style="fill:white;"/>
                 </g>
                 <g transform="matrix(3.0822,1.38096,-1.03572,4.10959,-7367.71,-15905.2)">
-                    <circle cx="1471" cy="1574" r="15" style="fill:rgb(71,45,125);"/>
+                    <circle cx="1471" cy="1574" r="15" style="fill:rgb(46,29,81);"/>
                 </g>
                 <g transform="matrix(3.0822,1.38096,-1.03572,4.10959,-8721.79,-14181.5)">
                     <circle cx="1471" cy="1574" r="15" style="fill:rgb(71,45,125);"/>
                 </g>
                 <g transform="matrix(3.0822,1.38096,-1.03572,4.10959,-5538.22,-13025.2)">
-                    <circle cx="1471" cy="1574" r="15" style="fill:rgb(71,45,125);"/>
+                    <circle cx="1471" cy="1574" r="15" style="fill:rgb(46,29,81);"/>
                 </g>
                 <g transform="matrix(3.0822,1.38096,-1.03572,4.10959,-6840.65,-16167.5)">
                     <circle cx="1471" cy="1574" r="15" style="fill:rgb(71,45,125);"/>
@@ -45,7 +45,7 @@
                     <circle cx="1471" cy="1574" r="15" style="fill:rgb(71,45,125);"/>
                 </g>
                 <g transform="matrix(3.0822,1.38096,-1.03572,4.10959,-5794.34,-17019.8)">
-                    <circle cx="1471" cy="1574" r="15" style="fill:rgb(71,45,125);"/>
+                    <circle cx="1471" cy="1574" r="15" style="fill:rgb(46,29,81);"/>
                 </g>
                 <g transform="matrix(3.0822,1.38096,-1.03572,4.10959,-6685.7,-17825.7)">
                     <circle cx="1471" cy="1574" r="15" style="fill:rgb(71,45,125);"/>
@@ -63,10 +63,10 @@
                     <circle cx="1471" cy="1574" r="15" style="fill:rgb(71,45,125);"/>
                 </g>
                 <g transform="matrix(3.0822,1.38096,-1.03572,4.10959,-869.719,-14358.1)">
-                    <circle cx="1471" cy="1574" r="15" style="fill:rgb(71,45,125);"/>
+                    <circle cx="1471" cy="1574" r="15" style="fill:white;"/>
                 </g>
                 <g transform="matrix(3.0822,1.38096,-1.03572,4.10959,-3005.41,-12791)">
-                    <circle cx="1471" cy="1574" r="15" style="fill:rgb(71,45,125);"/>
+                    <circle cx="1471" cy="1574" r="15" style="fill:white;"/>
                 </g>
                 <g transform="matrix(3.0822,1.38096,-1.03572,4.10959,-1382.95,-11287.2)">
                     <circle cx="1471" cy="1574" r="15" style="fill:rgb(71,45,125);"/>
@@ -78,13 +78,13 @@
                     <circle cx="1471" cy="1574" r="15" style="fill:rgb(71,45,125);"/>
                 </g>
                 <g transform="matrix(3.0822,1.38096,-1.03572,4.10959,-4590.37,-15829.5)">
-                    <circle cx="1471" cy="1574" r="15" style="fill:rgb(71,45,125);"/>
+                    <circle cx="1471" cy="1574" r="15" style="fill:white;"/>
                 </g>
                 <g transform="matrix(3.0822,1.38096,-1.03572,4.10959,-2456.81,-14265.9)">
                     <circle cx="1471" cy="1574" r="15" style="fill:rgb(71,45,125);"/>
                 </g>
                 <g transform="matrix(3.0822,1.38096,-1.03572,4.10959,-1217.87,-13149.8)">
-                    <circle cx="1471" cy="1574" r="15" style="fill:rgb(71,45,125);"/>
+                    <circle cx="1471" cy="1574" r="15" style="fill:rgb(46,29,81);"/>
                 </g>
                 <g transform="matrix(3.0822,1.38096,-1.03572,4.10959,-2571.95,-11426.1)">
                     <circle cx="1471" cy="1574" r="15" style="fill:rgb(71,45,125);"/>
@@ -108,7 +108,7 @@
                     <circle cx="1471" cy="1574" r="15" style="fill:rgb(71,45,125);"/>
                 </g>
                 <g transform="matrix(3.0822,1.38096,-1.03572,4.10959,-11929.9,-12472.9)">
-                    <circle cx="1471" cy="1574" r="15" style="fill:rgb(71,45,125);"/>
+                    <circle cx="1471" cy="1574" r="15" style="fill:white;"/>
                 </g>
                 <g transform="matrix(3.0822,1.38096,-1.03572,4.10959,-8180.45,-12507.2)">
                     <circle cx="1471" cy="1574" r="15" style="fill:rgb(71,45,125);"/>
@@ -129,7 +129,7 @@
                     <circle cx="1471" cy="1574" r="15" style="fill:rgb(71,45,125);"/>
                 </g>
                 <g transform="matrix(3.0822,1.38096,-1.03572,4.10959,-8528.6,-11298.9)">
-                    <circle cx="1471" cy="1574" r="15" style="fill:rgb(71,45,125);"/>
+                    <circle cx="1471" cy="1574" r="15" style="fill:rgb(46,29,81);"/>
                 </g>
                 <g transform="matrix(3.0822,1.38096,-1.03572,4.10959,-7450.19,-9742.43)">
                     <circle cx="1471" cy="1574" r="15" style="fill:rgb(71,45,125);"/>
@@ -144,25 +144,25 @@
                     <circle cx="1471" cy="1574" r="15" style="fill:rgb(71,45,125);"/>
                 </g>
                 <g transform="matrix(3.0822,1.38096,-1.03572,4.10959,-6659.16,-13289.4)">
-                    <circle cx="1471" cy="1574" r="15" style="fill:rgb(71,45,125);"/>
+                    <circle cx="1471" cy="1574" r="15" style="fill:white;"/>
                 </g>
                 <g transform="matrix(3.0822,1.38096,-1.03572,4.10959,-8855.58,-12813.2)">
-                    <circle cx="1471" cy="1574" r="15" style="fill:rgb(71,45,125);"/>
+                    <circle cx="1471" cy="1574" r="15" style="fill:white;"/>
                 </g>
                 <g transform="matrix(3.0822,1.38096,-1.03572,4.10959,-5780.1,-9717.53)">
-                    <circle cx="1471" cy="1574" r="15" style="fill:rgb(71,45,125);"/>
+                    <circle cx="1471" cy="1574" r="15" style="fill:white;"/>
                 </g>
                 <g transform="matrix(3.0822,1.38096,-1.03572,4.10959,-2030.62,-9751.76)">
-                    <circle cx="1471" cy="1574" r="15" style="fill:rgb(71,45,125);"/>
+                    <circle cx="1471" cy="1574" r="15" style="fill:white;"/>
                 </g>
                 <g transform="matrix(3.0822,1.38096,-1.03572,4.10959,-4166.3,-8184.74)">
-                    <circle cx="1471" cy="1574" r="15" style="fill:rgb(71,45,125);"/>
+                    <circle cx="1471" cy="1574" r="15" style="fill:rgb(46,29,81);"/>
                 </g>
                 <g transform="matrix(3.0822,1.38096,-1.03572,4.10959,-4916.07,-11707.9)">
                     <circle cx="1471" cy="1574" r="15" style="fill:rgb(71,45,125);"/>
                 </g>
                 <g transform="matrix(3.0822,1.38096,-1.03572,4.10959,-5751.27,-11223.3)">
-                    <circle cx="1471" cy="1574" r="15" style="fill:rgb(71,45,125);"/>
+                    <circle cx="1471" cy="1574" r="15" style="fill:rgb(46,29,81);"/>
                 </g>
                 <g transform="matrix(3.0822,1.38096,-1.03572,4.10959,-3617.71,-9659.64)">
                     <circle cx="1471" cy="1574" r="15" style="fill:rgb(71,45,125);"/>
@@ -171,7 +171,7 @@
                     <circle cx="1471" cy="1574" r="15" style="fill:rgb(71,45,125);"/>
                 </g>
                 <g transform="matrix(3.0822,1.38096,-1.03572,4.10959,-1851.71,-8805.82)">
-                    <circle cx="1471" cy="1574" r="15" style="fill:rgb(71,45,125);"/>
+                    <circle cx="1471" cy="1574" r="15" style="fill:rgb(46,29,81);"/>
                 </g>
                 <g transform="matrix(3.0822,1.38096,-1.03572,4.10959,-1473.04,-8026.81)">
                     <circle cx="1471" cy="1574" r="15" style="fill:rgb(71,45,125);"/>
@@ -183,7 +183,7 @@
                     <circle cx="1471" cy="1574" r="15" style="fill:rgb(71,45,125);"/>
                 </g>
                 <g transform="matrix(3.0822,1.38096,-1.03572,4.10959,-2429.69,-10826.4)">
-                    <circle cx="1471" cy="1574" r="15" style="fill:rgb(71,45,125);"/>
+                    <circle cx="1471" cy="1574" r="15" style="fill:rgb(46,29,81);"/>
                 </g>
             </g>
         </g>
