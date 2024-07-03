@@ -23,7 +23,6 @@ func detect_mob_overlap(delta):
 		health -= DAMAGE_RATE * overlapping_mobs.size() * delta
 		%ProgressBar.value = health
 		
-		
 	if health <= 0.0:
 		health_depleted.emit()
 

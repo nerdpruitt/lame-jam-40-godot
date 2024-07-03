@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://csockvd3r10ml"]
+[gd_scene load_steps=14 format=3 uid="uid://csockvd3r10ml"]
 
 [ext_resource type="Script" path="res://scripts/game.gd" id="1_2mhna"]
 [ext_resource type="PackedScene" uid="uid://281cw6vhd6t" path="res://scenes/background.tscn" id="1_jmatr"]
@@ -23,6 +23,12 @@ _data = {
 "points": PackedVector2Array(0, 0, 0, 0, 2240, -307, 0, 0, 0, 0, 2266, 1383, 0, 0, 0, 0, -408, 1383, 0, 0, 0, 0, -397, -288, 0, 0, 0, 0, 2242, -309)
 }
 point_count = 5
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_dy400"]
+size = Vector2(3832, 92)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ftas2"]
+size = Vector2(102, 2072)
 
 [node name="Game" type="Node2D"]
 script = ExtResource("1_2mhna")
@@ -78,5 +84,24 @@ motion_mirroring = Vector2(1920, 1080)
 [node name="LargeStarsSprite" type="Sprite2D" parent="Parallax/ParallaxBackground/LargeStars"]
 texture = ExtResource("8_ve5sp")
 centered = false
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+collision_layer = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(1775, -25)
+shape = SubResource("RectangleShape2D_dy400")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(1775, 2037)
+shape = SubResource("RectangleShape2D_dy400")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(-25, 1007)
+shape = SubResource("RectangleShape2D_ftas2")
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(3553, 1007)
+shape = SubResource("RectangleShape2D_ftas2")
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

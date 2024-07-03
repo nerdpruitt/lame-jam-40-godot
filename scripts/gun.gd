@@ -12,5 +12,6 @@ func shoot():
 	new_bullet.global_rotation = %ShootingPoint.global_rotation
 	%ShootingPoint.add_child(new_bullet)
 
-func _on_timer_timeout():
+# todo: update this to come from a signal from the player
+func _on_timer_timeout()	:
 	shoot()
