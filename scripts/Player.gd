@@ -32,9 +32,7 @@ func detect_mob_overlap(delta):
 			health -= DAMAGE_RATE * overlapping_mobs.size() * delta
 			%ProgressBar.value = health
 			knockback(overlapping_mobs[0].velocity, delta)
-			
-		
-		
+				
 	if health <= 0.0:
 		health_depleted.emit()
 
@@ -81,3 +79,4 @@ func knockback(enemy_velocity, delta):
 
 func _on_invulnerability_timer_timeout():
 	$AnimationPlayer.play("idle")
+	$CollisionShape2D.disabled = false
