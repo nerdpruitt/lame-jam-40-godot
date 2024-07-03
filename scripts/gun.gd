@@ -13,5 +13,5 @@ func shoot():
 	%ShootingPoint.add_child(new_bullet)
 
 # todo: update this to come from a signal from the player
-func _on_timer_timeout()	:
+func _on_timer_timeout():
 	shoot()
