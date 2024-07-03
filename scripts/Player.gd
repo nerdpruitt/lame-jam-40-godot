@@ -16,15 +16,24 @@ func _physics_process(delta):
 	detect_mob_overlap(delta)
 
 func detect_mob_overlap(delta):
-	const DAMAGE_RATE = 50.0
+	const DAMAGE_RATE = 75.0
 	
 	var overlapping_mobs = %HurtBox.get_overlapping_bodies()
 	
 	if overlapping_mobs.size() > 0:
-		health -= DAMAGE_RATE * overlapping_mobs.size() * delta
-		%ProgressBar.value = health
-		knockback(overlapping_mobs[0].velocity, delta)
-		print("knockback")
+		if %InvulnerabilityTimer.is_stopped():
+			# Start Invulnerability period, disable collision shape, 
+			# and start hurt animation
+			%InvulnerabilityTimer.start()
+			$CollisionShape2D.disabled = true
+			$AnimationPlayer.play("flash")
+			
+			# subtract health and update health bar
+			health -= DAMAGE_RATE * overlapping_mobs.size() * delta
+			%ProgressBar.value = health
+			knockback(overlapping_mobs[0].velocity, delta)
+			
+		
 		
 	if health <= 0.0:
 		health_depleted.emit()
@@ -68,3 +77,7 @@ func knockback(enemy_velocity, delta):
 	velocity += knockback_direction * acceleration * delta
 	velocity = velocity.limit_length(max_speed)
 	move_and_slide()
+
+
+func _on_invulnerability_timer_timeout():
+	$AnimationPlayer.play("idle")

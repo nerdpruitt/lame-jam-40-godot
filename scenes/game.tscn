@@ -69,6 +69,7 @@ autostart = true
 [node name="ParallaxBgs" type="Node2D" parent="."]
 
 [node name="ParallaxBackground" type="ParallaxBackground" parent="ParallaxBgs"]
+scroll_offset = Vector2(-1352.27, -1530.16)
 
 [node name="SmallStars" type="ParallaxLayer" parent="ParallaxBgs/ParallaxBackground"]
 motion_scale = Vector2(0.5, 0.5)
