@@ -1,12 +1,15 @@
-[gd_scene load_steps=4 format=3 uid="uid://bjsccwevtpnng"]
+[gd_scene load_steps=5 format=3 uid="uid://bjsccwevtpnng"]
 
 [ext_resource type="Texture2D" uid="uid://b3wg7cn33qlc1" path="res://assets/sprites/shotgun-bullet.svg" id="1_0h6s2"]
 [ext_resource type="Script" path="res://scripts/Bullet.gd" id="1_cvb35"]
 
+[sub_resource type="CircleShape2D" id="CircleShape2D_2h78j"]
+radius = 16.0
+
 [sub_resource type="CircleShape2D" id="CircleShape2D_6fduu"]
 radius = 16.0
 
-[node name="Bullet" type="Area2D"]
+[node name="Bullet" type="StaticBody2D"]
 top_level = true
 collision_layer = 0
 collision_mask = 2
@@ -16,6 +19,13 @@ script = ExtResource("1_cvb35")
 texture = ExtResource("1_0h6s2")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_2h78j")
+
+[node name="HitBox" type="Area2D" parent="."]
+collision_layer = 0
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="HitBox"]
 shape = SubResource("CircleShape2D_6fduu")
 
-[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="body_entered" from="HitBox" to="." method="_on_hit_box_body_entered"]
