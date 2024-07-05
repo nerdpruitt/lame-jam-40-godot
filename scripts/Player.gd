@@ -20,18 +20,18 @@ func detect_mob_overlap(delta):
 	
 	var overlapping_mobs = %HurtBox.get_overlapping_bodies()
 	
-	if overlapping_mobs.size() > 0:
-		if %InvulnerabilityTimer.is_stopped():
-			# Start Invulnerability period, disable collision shape, 
-			# and start hurt animation
-			%InvulnerabilityTimer.start()
-			$CollisionShape2D.disabled = true
-			$AnimationPlayer.play("flash")
-			
-			# subtract health and update health bar
-			health -= DAMAGE_RATE * overlapping_mobs.size() * delta
-			%ProgressBar.value = health
-			knockback(overlapping_mobs[0].velocity, delta)
+	if overlapping_mobs.size() > 0 and %InvulnerabilityTimer.is_stopped():
+		# Start Invulnerability period, disable collision shape, 
+		# and start hurt animation
+		%InvulnerabilityTimer.start()
+		set_collision_layer_value(1, false)
+		set_collision_mask_value(2, false)
+		$AnimationPlayer.play("flash")
+		
+		# subtract health and update health bar
+		health -= DAMAGE_RATE * overlapping_mobs.size() * delta
+		%ProgressBar.value = health
+		knockback(overlapping_mobs[0].velocity, delta)
 				
 	if health <= 0.0:
 		health_depleted.emit()
@@ -76,7 +76,7 @@ func knockback(enemy_velocity, delta):
 	velocity = velocity.limit_length(max_speed)
 	move_and_slide()
 
-
-func _on_invulnerability_timer_timeout():
+func _on_invulnerability_timer_timeout():	
+	set_collision_layer_value(1, true)
+	set_collision_mask_value(2, true)
 	$AnimationPlayer.play("idle")
-	$CollisionShape2D.disabled = false
