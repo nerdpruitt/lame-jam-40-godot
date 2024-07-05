@@ -16,7 +16,7 @@ func _physics_process(delta):
 	detect_mob_overlap(delta)
 
 func detect_mob_overlap(delta):
-	const DAMAGE_RATE = 75.0
+	const DAMAGE_RATE = 200.0
 	
 	var overlapping_mobs = %HurtBox.get_overlapping_bodies()
 	
