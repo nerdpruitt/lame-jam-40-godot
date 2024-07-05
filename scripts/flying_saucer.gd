@@ -4,7 +4,7 @@ var health = 3
 var stunned = false
 var bullet_velocity
 
-@export var max_speed = 600
+@export var max_speed = 300
 @export var acceleration = 1500
 @export var friction = 800
 @export var knockback_power: int = 600
@@ -13,8 +13,12 @@ var bullet_velocity
 
 func _physics_process(delta):
 	if stunned == false:
-		var direction = global_position.direction_to(player.global_position)
-		velocity = direction * 300.0
+		var direction = global_position.direction_to(player.global_position)		
+
+		# direction * acceleration, capped at max speed
+		velocity += (direction * acceleration * delta)
+		velocity = velocity.limit_length(max_speed)
+				
 	elif stunned:
 		# stop movement toward player
 		velocity = Vector2(0, 0)
