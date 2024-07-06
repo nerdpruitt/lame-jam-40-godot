@@ -1,16 +1,16 @@
 [gd_scene load_steps=4 format=3 uid="uid://ctsjfp0whfux2"]
 
-[ext_resource type="Texture2D" uid="uid://cxykdpc78t0th" path="res://assets/sprites/rocket-launcher.svg" id="1_iakr7"]
-[ext_resource type="Script" path="res://scripts/gun.gd" id="1_n2e0d"]
+[ext_resource type="Script" path="res://scripts/gun.gd" id="1_ns0ew"]
+[ext_resource type="Texture2D" uid="uid://cxykdpc78t0th" path="res://assets/sprites/rocket-launcher.svg" id="2_3qfhd"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_inr6y"]
 radius = 650.111
 
-[node name="Gun" type="Area2D"]
+[node name="RocketLauncher" type="Area2D"]
 position = Vector2(31, 0)
 collision_layer = 0
 collision_mask = 2
-script = ExtResource("1_n2e0d")
+script = ExtResource("1_ns0ew")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(2.08165e-12, 2.08165e-12)
@@ -19,11 +19,11 @@ shape = SubResource("CircleShape2D_inr6y")
 [node name="WeaponPivot" type="Marker2D" parent="."]
 position = Vector2(2.08165e-12, 2.08165e-12)
 
-[node name="RocketLauncher" type="Sprite2D" parent="WeaponPivot"]
-position = Vector2(100, 2.08165e-12)
-texture = ExtResource("1_iakr7")
+[node name="WeaponSprite" type="Sprite2D" parent="WeaponPivot"]
+position = Vector2(83, 2.08165e-12)
+texture = ExtResource("2_3qfhd")
 
-[node name="ShootingPoint" type="Marker2D" parent="WeaponPivot/RocketLauncher"]
+[node name="ShootingPoint" type="Marker2D" parent="WeaponPivot/WeaponSprite"]
 unique_name_in_owner = true
 position = Vector2(40, 2.08165e-12)
 

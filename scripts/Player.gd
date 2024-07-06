@@ -11,6 +11,15 @@ var health = 100.0
 
 var input = Vector2.ZERO
 
+func _ready():
+	var gun_scene = preload("res://scenes/rocket_launcher.tscn")
+	var gun = gun_scene.instantiate()
+	gun.position.x = $PlayerSprite/GunPosition.position.x
+	gun.position.y = $PlayerSprite/GunPosition.position.y
+	gun.global_rotation = $PlayerSprite/GunPosition.rotation
+	gun.set_z_index(-1)
+	$PlayerSprite/GunPosition.add_child(gun)
+
 func _physics_process(delta):
 	player_movement(delta)
 	detect_mob_overlap(delta)

@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://scripts/Player.gd" id="1_8tbbs"]
 [ext_resource type="Texture2D" uid="uid://cmrukyah2mpwh" path="res://assets/sprites/player.svg" id="2_1j7yp"]
-[ext_resource type="PackedScene" uid="uid://ctsjfp0whfux2" path="res://scenes/gun.tscn" id="3_u05w3"]
+[ext_resource type="PackedScene" uid="uid://ctsjfp0whfux2" path="res://scenes/rocket_launcher.tscn" id="3_u05w3"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_1hl8y"]
 radius = 47.0
@@ -39,7 +39,7 @@ loop_mode = 1
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("Sprite2D:self_modulate")
+tracks/0/path = NodePath("PlayerSprite:self_modulate")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
@@ -54,7 +54,7 @@ resource_name = "idle"
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("Sprite2D:modulate")
+tracks/0/path = NodePath("PlayerSprite:modulate")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
@@ -77,11 +77,15 @@ motion_mode = 1
 script = ExtResource("1_8tbbs")
 
 [node name="Gun" parent="." instance=ExtResource("3_u05w3")]
+visible = false
 position = Vector2(4, 1)
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
+[node name="PlayerSprite" type="Sprite2D" parent="."]
 position = Vector2(4, 21)
 texture = ExtResource("2_1j7yp")
+
+[node name="GunPosition" type="Marker2D" parent="PlayerSprite"]
+position = Vector2(-1, -10)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(3, -3)
